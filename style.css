@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(255, 192, 203, 0.316);
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+
+#calculator {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(253, 225, 230);
+    border-radius: 15px;
+    max-width: 350px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+#display {
+    width: 100%;
+    padding: 15px;
+    font-size: 2rem;
+    text-align: left;
+    border: none;
+    background-color: rgba(252, 160, 174, 0.816)
+}
+
+#calc-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 25px;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(252, 160, 174, 0.816);
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    background-color: rgba(252, 160, 174, 0.571);
+}
+
+button:active {
+    background-color: rgb(252, 160, 174);
+} 
+
+.operator {
+    background-color: rgba(246, 155, 155, 0.637);
+}
+
+.operator:hover {
+    background-color: rgba(246, 155, 155, 0.933);
+}
+
+.operator:active {
+    background-color: rgb(246, 155, 155);
+}
+
+/*Dark Mode*/
+
+body.dark {
+    background-color: #3b2f3a;
+}
+
+body.dark button {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+body.dark #calculator {
+    background-color: #41072d;
+    box-shadow: 0 8px 25px rgba(255, 182, 193, 0.15);
+}
+
+body.dark #display {
+    background-color: #2b2b2b;
+    color: #ffe6f2;
+}
+
+body.dark button {
+    background-color:#62174fba;
+    color: #ffffff;
+}
+
+body.dark button:hover {
+    background-color:#62174f52;
+}
+
+body.dark button:active {
+    background-color:#62174f;
+}
+
+body.dark .operator {
+    background-color:#661919d6;
+}
+
+body.dark .operator:hover {
+    background-color:#66191970;
+}
+
+body.dark .operator:active {
+    background-color:#661919;
+}
